@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body onload="fetchContacts()">
+    <div id="table-top">
+      <h1>J.R. & Co.</h1>
+      <a href="#">HOME</a>
+      <a href="add-contact.html">ADD CONTACT</a>
+    </div>
+    <div id="contacts">
+      <h1 class="contactBook">CONTACT BOOK <img src="images/" alt="" /></h1>
+      <div class="tableButtons">
+        <button id="refresh" class="formButton">Refresh</button>
+        <button id="addContact" type="button" class="formButton">
+          Add Contact
+        </button>
+      </div>
+      <div id="table">Contact Loading...</div>
+      <br />
+    </div>
+    <script src="src/config.js"></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>

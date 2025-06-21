@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Contacts</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body onload="getContact()">
+    <div id="table-top">
+      <h1>J.R. & Co.</h1>
+      <a href="index.html">HOME</a>
+      <a href="add-contact.html">ADD CONTACT</a>
+    </div>
+    <form id="editForm">
+      <div class="mainContent">
+        <div class="cardWrapper">
+          <div class="cardContent">
+            <!-- Left: Avatar -->
+            <div class="avatarSection">
+              <div id="avatarImageWrapper">
+                <div id="avatarImage"></div>
+                <label for="avatar" id="avatarLabel" hidden
+                  >Change Profile Image</label
+                >
+                <input type="file" name="avatar" id="avatar" hidden />
+                <br />
+              </div>
+              <br />
+              <hr class="cardDivider" />
+              <div class="formSection">
+                <label for="firstname">First name</label>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  class="formInput"
+                  readonly
+                />
+                <br />
+                <label for="lastname">Last name</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  class="formInput"
+                  readonly
+                />
+                <br />
+                <label for="mobile">Mobile</label>
+                <input
+                  type="text"
+                  name="mobile"
+                  id="mobile"
+                  class="formInput"
+                  readonly
+                />
+                <br />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="formInput"
+                  readonly
+                />
+                <br />
+                <button type="submit" id="submitForm" class="formButton" hidden>
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <br />
+          <div class="buttonContainer">
+            <button id="homeLink" type="button" class="formButton">
+              <img
+                src="images/home_22dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                alt=""
+              />
+            </button>
+            <button id="editContact" type="button" class="formButton">
+              <img
+                src="images/edit_22dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                alt=""
+              />
+            </button>
+            <button id="deleteContact" type="button" class="formButton">
+              <img
+                src="images/delete_22dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script src="src/config.js"></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>
